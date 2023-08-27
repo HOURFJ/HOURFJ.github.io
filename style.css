@@ -1,27 +1,42 @@
 body {
-      text-align: center;
-      background-color: rgb(85,170,255);
-    }
-    h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: underline;
-    }
+  text-align: center;
+  background-color: rgb(85, 170, 255);
+}
 
-    p {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
 
-    a {
-      color: blue;
-    }
+p,span {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    hr {
-      width: 60%;
-    }
+a {
+  color: blue;
+}
 
-    .footer {
-      position: fixed;
-      bottom: 10px;
-      left: 0;
-      right: 0;
-    }
+hr {
+  width: 60%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+#simo28 {
+  color: black;
+  text-decoration: none;
+}
+
+#simo28:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.simotextinline {
+  display: inline-block;
+}
