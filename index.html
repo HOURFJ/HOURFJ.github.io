@@ -3,6 +3,7 @@
     <head>
             <title>HOURFJ.github.io</title>
             <link rel="stylesheet" href="style/.css">
+            <link rel="icon" href="https://mc-heads.net/head/d0f08737-a605-4e69-a4b3-c49869da8864/1080"
     </head>
     <body>
         <center>
@@ -13,9 +14,21 @@
                 <p>Its very empty right now. It will link projects I'm working on.</p>
                 <div class="footer" >
                 <hr style="width: 60%;">
-                <footer>
-                Discord: HOURFJ | X: <a href="https://twitter.com/HOURFJ_">@HOURFJ_</a> | Github: <a href="https://https://github.com/HOURF">HOURFJ</a>
+                <div class="footer"></div>
+                Discord: 
+                <div class="tooltip">
+                <a href="javascript:copy()">HOURFJ</a>
+                <span class="tooltiptext" id="myTooltip">Click to copy to clipboard</span>
                 </div>
+                 | X: <a href="https://twitter.com/HOURFJ_" target="_blank" >@HOURFJ_</a> | Github: <a href="https://github.com/HOURFJ" target="_blank">HOURFJ</a>
         </center>
+        <script>
+            function copy() {
+            navigator.clipboard.writeText("HOURFJ")
+
+            var tooltip = document.getElementById("myTooltip");
+            tooltip.innerHTML = "Copied!";
+            }
+        </script>
     </body>
 </html>
