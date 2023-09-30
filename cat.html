@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOURFJ.gitub.io/cat</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="https://mc-heads.net/head/d0f08737-a605-4e69-a4b3-c49869da8864/1080">
+    <script>
+        function ajax_get(url, callback) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    console.log('responseText:' + xmlhttp.responseText);
+                    try {
+                        var data = JSON.parse(xmlhttp.responseText);
+                    } catch (err) {
+                        console.log(err.message + " in " + xmlhttp.responseText);
+                        return;
+                    }
+                    callback(data);
+                }
+            };
+
+            xmlhttp.open("GET", url, true);
+            xmlhttp.send();
+        }
+
+        ajax_get('https://api.thecatapi.com/v1/images/search?size=fit', function (data) {
+            var html = '<img src="' + data[0]["url"] + '">';
+            document.getElementById("image").innerHTML = html;
+            document.querySelector('meta[name="image"]').setAttribute(data[0]["url"], _desc);
+        });
+    </script>
+    <meta content="Embed Title" property="og:title" />
+    <meta content="image" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+</head>
+
+<body>
+    <h2>CAT!</h2>
+    <div id="image"></div>
+</body>
+
+</html>
