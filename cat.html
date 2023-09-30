@@ -27,9 +27,7 @@
 
         ajax_get('https://api.thecatapi.com/v1/images/search?size=fit', function (data) {
             var html = '<img src="' + data[0]["url"] + '">';
-            var image = '0; url=' + data[0]["url"] + ''
             document.getElementById("image").innerHTML = html;
-            document.querySelector('meta[content*="image"]').setAttribute("content", image);
         });
     </script>
 </head>
