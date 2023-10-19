@@ -1,6 +1,9 @@
+@import url("./minecraft-font.css");
+
 body {
   text-align: center;
   background-color: rgb(85, 170, 255);
+  font-family: "Minecraft", Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 h1 {
@@ -12,7 +15,8 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p,span {
+p,
+span {
   font-family: Arial, Helvetica, sans-serif;
 }
 
